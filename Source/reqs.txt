@@ -1,0 +1,12 @@
+#Source\venv\Scripts\Activate.ps1 
+#python -m pip install -r Source/reqs.txt
+
+#python -m venv .venv
+
+customtkinter
+
+packaging
+
+
+python-osc
+
