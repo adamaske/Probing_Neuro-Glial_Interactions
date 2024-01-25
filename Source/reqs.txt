@@ -3,6 +3,9 @@
 
 #python -m venv .venv
 
+numpy
+
+mne
 customtkinter
 
 packaging
