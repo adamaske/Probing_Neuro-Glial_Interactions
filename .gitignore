@@ -151,3 +151,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 Library/Backup-11-03/Thesis.enlx
+Library/Thesis.Data/sdb/sdb.eni
+Library/Thesis.Data/sdb/pdb.eni
+Library/Thesis.Data/sdb/pdb.eni
+Library/Thesis.Data/sdb/sdb.eni

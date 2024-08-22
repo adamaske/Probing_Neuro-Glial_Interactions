@@ -1,0 +1,3 @@
+[submodule "neuropipeline"]
+	path = neuropipeline
+	url = https://github.com/adamaske/neuropipeline
