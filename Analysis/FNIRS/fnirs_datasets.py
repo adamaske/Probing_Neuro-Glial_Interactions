@@ -3,9 +3,43 @@ import os
 import pathlib
 import mne
 import matplotlib.pyplot as plt
+import uuid
 
+class FNIRSDatasetManager:
+    def __init__(self) -> None:
+        
+        self.active_table = 0
+        self.active_metadata = 1
+        pass
+    
 fnirs_data_folder = os.path.join(os.getcwd(), "FNIRS\\datasets")
 motion_artifacts_folder = os.path.join(fnirs_data_folder, "motion_artifacts")
+
+
+master_folder = fnirs_data_folder
+
+#This is a datatable for fnir_file instances
+def load_table():
+    table = []
+    with open(os.path.join(master_folder, "table.data"), 'rb') as f:
+        data = f.read()
+        table.append(data)
+        
+        
+    return table
+
+def load_metadata():
+    md = 0
+    with open(os.path.join(master_folder, "metadata.data"), 'rb') as f:
+        data = f.read()
+        md.append(data)
+    
+        
+    
+def register_fnirs_dataset():
+    uid = uuid.uuid1()
+    
+    return uid
 
 def is_snirf_file(filename):
     """Checks for .snirf suffix.
@@ -26,7 +60,6 @@ def search_folder_for_snirf_files(absoulte_path, check_subfolders = True):
     data = []
     for filename in os.listdir(absoulte_path):
         filepath = os.path.join(absoulte_path, filename)
-        
         if os.path.isdir(filepath) and check_subfolders:
             subfolder_data = search_folder_for_snirf_files(filepath)
             data.append(subfolder_data)

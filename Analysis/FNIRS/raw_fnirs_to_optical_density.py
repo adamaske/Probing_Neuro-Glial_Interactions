@@ -1,5 +1,6 @@
 
-def input(fnirs_data):
+
+def input_mne(fnirs_data):
     
     #COMFIRM fNIRS DATA IS VALID ?
     
