@@ -4,13 +4,6 @@ import pathlib
 import mne
 import matplotlib.pyplot as plt
 import uuid
-
-class FNIRSDatasetManager:
-    def __init__(self) -> None:
-        
-        self.active_table = 0
-        self.active_metadata = 1
-        pass
     
 fnirs_data_folder = os.path.join(os.getcwd(), "FNIRS\\datasets")
 motion_artifacts_folder = os.path.join(fnirs_data_folder, "motion_artifacts")
@@ -36,8 +29,10 @@ def load_metadata():
     
         
     
-def register_fnirs_dataset():
+def register_fnirs_dataset(name, ):
     uid = uuid.uuid1()
+    
+    
     
     return uid
 

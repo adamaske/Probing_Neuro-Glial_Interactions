@@ -6,6 +6,8 @@ if __name__ == "__main__":
     
     table = fd.load_table()
     metadata = fd.load_metadata()
+    
+    
 #Welcome to analyzing fnris and eeg data at the same time
 
 

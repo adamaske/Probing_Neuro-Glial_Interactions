@@ -14,5 +14,6 @@ sympy
 mne
 
 pathlib
+scikit-learn
 #pylsl
 #pyserial
